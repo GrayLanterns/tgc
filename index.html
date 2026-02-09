@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGC</title>
+
+<script src="https://unpkg.com/matrix-js-sdk/lib/browser-matrix.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+  <div id="login-screen" class="screen">
+    <h1>TGC</h1>
+    <p>The Gray Conversations</p>
+    <input id="username" placeholder="Matrix Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="login()">Enter</button>
+  </div>
+
+  <div id="chat-screen" class="screen hidden">
+    <div class="header">
+      <span>TGC</span>
+      <button onclick="joinVoice()">Voice</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <div id="messages"></div>
+
+    <div class="input-area">
+      <input id="messageInput" placeholder="Type message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
