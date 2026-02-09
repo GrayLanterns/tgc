@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TGC</title>
+
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#0e0e0e" />
+
+<style>
+body {
+  margin: 0;
+  background: #0e0e0e;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+button {
+  background: #1c1c1c;
+  color: white;
+  border: 1px solid #2a2a2a;
+  padding: 14px 28px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #2a2a2a;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>TGC</h1>
+  <p>The Gray Conversations<br/>Curated by Gray</p>
+  <button onclick="enter()">Enter Private Space</button>
+</div>
+
+<script>
+function enter() {
+  window.location.href = "https://matrix.to/#/!JMaLzauHVEtDvETuQu:matrix.org?via=matrix.org";
+}
+</script>
+
+</body>
+</html>
